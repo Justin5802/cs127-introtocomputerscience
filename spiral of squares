@@ -1,0 +1,24 @@
+#Name: Justin Bret Chu
+#Date: October 15, 2021
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#This program prints: pseudocode for sprial of squares
+
+
+import turtle
+jack = turtle.Turtle()
+turtle.colormode(255)
+jack.speed(0)
+jack.pensize(5)
+wn = turtle.Screen()
+wn.bgcolor("khaki")
+
+
+
+for i in range(36):
+    jack.pencolor(0,i*7,0)
+    jack.forward(10)
+    jack.left(10)
+    for i in range(4):
+        jack.left(90)
+        jack.forward(300)
+        jack.backward(50)
