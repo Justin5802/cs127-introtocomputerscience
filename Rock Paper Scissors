@@ -1,0 +1,43 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+
+import random
+
+def game(player, computer):
+    winner = ""
+    if player == computer:
+        winner = "draw"
+    elif player == 1 and computer == 2:
+        winner = "computer"
+    elif player == 1 and computer == 3:
+        winner = "human"
+    elif player == 2 and computer == 1:
+        winner = "human"
+    elif player == 2 and computer == 3:
+        winner = "computer"
+    elif player == 3 and computer == 1:
+        winner = "computer"
+    elif player == 3 and computer == 2:
+        winner = "human"
+    else:
+        winner = "invalid"
+    return winner
+       
+    
+def main():
+    winner = ""
+    player = 1
+    while player > 0:
+        player = int(input("enter 1 for rock, 2 for paper, or 3 for scissors: "))
+        if player > 0:
+            computerMove = random.randrange(1,4)
+            print("computerMove: ",computerMove)
+            winner = game(player,computerMove)
+            print("round finished and winner is: ", winner)
+        else:
+            print("game finished and winner is: ", winner)
+             
+
+if __name__ == "__main__":
+    main()
+    
