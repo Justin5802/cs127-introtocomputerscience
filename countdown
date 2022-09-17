@@ -1,0 +1,27 @@
+//
+//  ProgrammingAssignment56.cpp
+//  Name: Justin Bret Chu
+//  Email: JUSTIN.CHU73@myhunter.cuny.edu
+//  Created by Justin Chu on 12/2/21.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number;
+    cout << "Please enter a number: \n";
+    cin >> number;
+    string word;
+    cout << "Please type a word: \n";
+    cin >> word;
+    
+    for (int i = number; i > 0; i--)
+        cout << i << "," << "\n";
+    
+    cout << "Time for " << word << "!";
+    return 0;
+    
+    
+}
