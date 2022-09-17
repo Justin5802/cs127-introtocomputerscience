@@ -1,0 +1,25 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: October 12, 2021
+#This program creates an image of khaki and rosy horizontal and vertical stripes
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+size = int(input("Please enter the size: "))
+
+output = input("Please enter the output file: ")
+
+img = np.ones((size,size,3))
+
+img[1::2,:,0] = .94
+img[1::2,:,1] = .90
+img[1::2,:,2] = .55
+
+
+img[:,1::2,0] = .73
+img[:,1::2,1] = .56
+img[:,1::2,2] = .56
+
+plt.imsave(output,img) 
