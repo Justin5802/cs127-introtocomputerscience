@@ -1,0 +1,23 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+
+import folium 
+import pandas as pd
+
+File = input("Enter CSV file name: ")
+Output = input("Enter output file: ")
+
+attractions = pd.read_csv(File)
+print(attractions["NAME"])
+
+NYCattractions = folium.Map(location = [40.768731, -73.964915])
+
+for index,row in attractions.iterrows():
+    lat = row["LATITUDE"]
+    lon = row["LONGITUDE"]
+    name = row["NAME"]
+    newMarker = folium.Marker([lat,lon],popup = name)
+    newMarker.add_to(NYCattractions)
+
+
+NYCattractions.save(outfile=Output)
