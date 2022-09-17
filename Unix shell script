@@ -1,0 +1,9 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: October 26, 2021
+#This program writes a Unix shell script that stores the name of the user
+
+#!/bin/bash
+
+echo "Hello CSCI127 Students!"
+echo "$USER is learning shell scripts!"
