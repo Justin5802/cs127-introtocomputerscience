@@ -1,0 +1,20 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+
+mkdir csci127
+cd csci127
+
+mkdir images
+mkdir files
+
+cd images
+mkdir png
+mkdir jpg
+mkdir gif
+
+cd ..
+cd files
+mkdir csv
+mkdir txt
+
+ls files
