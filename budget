@@ -1,0 +1,27 @@
+//
+//  ProgrammingAssignment59.cpp
+//  Name: Justin Bret Chu
+//  Email: JUSTIN.CHU73@myhunter.cuny.edu
+//  Created by Justin Chu on 12/5/21.
+//
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int budget;
+    cout << "Enter your monthly budget for food and coffee: ";
+    cin >> budget;
+    float coffee;
+    cout << "How much are you spending in a week for coffee: ";
+    cin >> coffee;
+    cout << fixed << setprecision(1);
+    
+    cout << "Budget left after week 1:  " << budget - coffee << "\n";
+    cout << "Budget left after week 2:  " << budget - (coffee * 2) << "\n";
+    cout << "Budget left after week 3:  " << budget - (coffee * 3) << "\n";
+    cout << "Budget left after week 4:  " << budget - (coffee * 4) << "\n";
+    return 0;
+}
