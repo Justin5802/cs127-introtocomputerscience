@@ -1,0 +1,23 @@
+////
+////  Programming Assignment 55.cpp
+//// Name: Justin Bret Chu
+//// Email: JUSTIN.CHU73@myhunter.cuny.edu
+////  Created by Justin Chu on 12/2/21.
+
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main ()
+{
+    float crypto;
+    cout << "Enter amount in cryptocurrency: ";
+    cin >> crypto;
+    cout << fixed << setprecision(2);
+    cout << crypto << "BTC in USD:" << crypto * 31901.19 << endl;
+    cout << crypto << "ETH in USD:" << crypto * 1901.54 << endl;
+    cout << crypto << "DOGE in USD:" << crypto * 0.179733 << endl;
+    return 0;
+}
