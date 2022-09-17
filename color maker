@@ -1,0 +1,47 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+img = np.ones((10,10,3))
+
+
+Intro = print("Welcome to the Color Maker! Please enter for each rbg color the value in which to increase/decrease them. If all 3 values given are 0, the program will end and save the resulting image.")
+Outfile = input("Please enter outfile name: ")
+
+red,green,blue = (0,0,0)
+userred = -1
+usergreen = -1
+userblue = -1
+
+while userred != 0  or usergreen != 0 or userblue != 0:
+    userred = int(input("How much do you want to change the red value by?"))
+    usergreen = int(input("How much do you want to change the green value by?"))
+    userblue = int(input("How much do you want to change the blue value by?"))
+
+    red = red + userred/255
+    green = green + usergreen/255
+    blue = blue + userblue/255
+
+    if red > 1:
+            red = 1
+    if red < 0:
+            red = 0
+    if green > 1:
+            green = 1
+    if green < 0:
+            green = 0
+    if blue > 1:
+            blue = 1
+    if blue < 0:
+        blue = 0
+
+print("The current rgb values are:", [red + userred, green + usergreen, blue + userblue])
+
+img[:,:,0] = red
+img[:,:,1] = green
+img[:,:,2] = blue
+ 
+print("You're done! Congrats on the color, it looks beautfiul!")
+plt.imsave(Outfile,img)
