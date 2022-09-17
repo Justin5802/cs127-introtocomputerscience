@@ -1,0 +1,61 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: September 17,2021
+#This program creates: a pinwheel
+
+
+
+
+
+
+
+import turtle
+
+
+turtle.shape("arrow")
+turtle.color("purple")
+turtle.pensize(3)
+
+turtle.forward(30)
+
+turtle.forward(50)
+turtle.right(120)
+turtle.forward(50)
+turtle.right(120)
+turtle.forward(50)
+turtle.right(120)
+
+turtle.backward(30)
+turtle.right(90)
+turtle.forward(30)
+
+turtle.forward(50)
+turtle.right(120)
+turtle.forward(50)
+turtle.right(120)
+turtle.forward(50)
+turtle.right(120)
+
+turtle.backward(30)
+turtle.right(90)
+turtle.forward(30)
+
+turtle.forward(50)
+turtle.right(120)
+turtle.forward(50)
+turtle.right(120)
+turtle.forward(50)
+turtle.right(120)
+
+turtle.backward(30)
+turtle.right(90)
+turtle.forward(30)
+
+turtle.forward(50)
+turtle.right(120)
+turtle.forward(50)
+turtle.right(120)
+turtle.forward(50)
+turtle.right(120)
+
+turtle.backward(30)
