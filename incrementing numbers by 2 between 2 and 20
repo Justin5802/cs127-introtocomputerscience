@@ -1,0 +1,12 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: September 22, 2021
+#This program outputs numbers 2-20 incrementing by 2.
+
+
+for i in range(2,21,2):
+    print (i)
+    
+
+for x in range(12,31,2):
+    print (x)
