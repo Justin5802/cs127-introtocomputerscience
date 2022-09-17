@@ -1,0 +1,49 @@
+//
+//  ProgrammingAssignment60.cpp
+//  Name: Justin Bret Chu
+//  Email: JUSTIN.CHU73@myhunter.cuny.edu
+//  Created by Justin Chu on 12/6/21.
+//
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    int number;
+    cout << "Enter number: ";
+    cin >> number;
+    int x;
+    if (number < 0)
+    {
+        cout << "1";
+        x = 32 + number;
+    }
+    else
+    {
+        cout << "0";
+        x = number;
+    }
+    int b = 16;
+    while (b > 0.5)
+    {
+        if (x >= b)
+        {
+            cout << "1";
+        }
+        else
+        {
+            cout << "0";
+        }
+        x = x%b;
+        b = b/2;
+        
+    
+    }
+    cout << ("\n");
+    
+    
+    return 0;
+        
+}
