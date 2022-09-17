@@ -1,0 +1,35 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: September 28,2021
+#This program creates two hearts.
+
+import turtle
+
+turtle.colormode(255)
+james = turtle.Turtle()
+james.shape("turtle")
+
+james.penup()
+james.right(90)
+james.forward(100)
+james.left(90)
+james.left(60)
+james.pendown()
+
+
+for i in range(0, 255, 10):
+    james.forward(10)
+    james.pensize(i)
+    james.color(i,i,0)
+
+james.penup()
+james.backward(260)
+james.left(60)
+james.color(0,0,0)
+james.pensize(0)
+james.pendown()
+
+for i in range(0,255,10):
+    james.forward(10)
+    james.pensize(i)
+    james.color(i,i,0)
