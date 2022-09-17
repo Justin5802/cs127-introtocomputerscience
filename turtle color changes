@@ -1,0 +1,29 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: September 30, 2021
+#This program creates two transitions from yellow to red.
+
+import turtle
+
+turtle.colormode(255)
+jack = turtle.Turtle()
+jack.shape("turtle")
+jack.backward(100)
+
+for i in range(0,255,10):
+    jack.forward(10)
+    jack.pensize(i)
+    jack.color(255,255-i,0)
+
+
+jack.penup()
+jack.backward(260)
+jack.right(90)
+jack.color(0,0,0)
+jack.pensize(0)
+jack.pendown()
+
+for i in range(0,255,10):
+    jack.forward(10)
+    jack.pensize(i)
+    jack.color(255,255-i,0)
