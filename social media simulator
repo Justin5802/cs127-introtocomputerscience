@@ -1,0 +1,36 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: October 11, 2021
+#This program prints the user's amount of social media followers
+
+
+mess = int(input("Please enter amount of social media followers: "))
+
+a = 0
+b = mess
+c = 1000
+d = 10000
+e = 100000
+f = 500000
+g = 1000000
+
+if b < 0:
+    print("Your influencer tier is: Error!")
+
+elif b < c:
+    print("Your influencer tier is: Hyper Influencer!")
+
+elif d > b > c:
+    print("Your influencer tier is: Nano Influencer!")
+
+elif e > b > d:
+    print("Your influencer tier is: Micro Influencer!")
+
+elif f > b > e:
+    print("Your influencer tier is: Mid-Tier Influencer!")
+
+elif g > b > f:
+    print("Your influencer tier is: Macro Influencer!")
+ 
+elif b > g:
+    print("Your influencer tier is: Celebrity Influencer!")
