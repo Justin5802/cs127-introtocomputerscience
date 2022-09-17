@@ -1,0 +1,11 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: September 10, 2021
+#This program prints "Nonagon!"
+
+import turtle
+print ("Nonagon!")
+t = turtle.Turtle()
+for i in range(9) :
+    t.forward(100) #assuming the side of a octagon is 100
+    t. right(40) #turns the turtle by 140 degrees
