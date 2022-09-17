@@ -1,0 +1,20 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: October 5, 2021
+#This program converts parsecs to lightyears, and vice versa based on user input
+
+
+choice = input("Press A for lightyear to parsec conversion \nPress B for parsec to lightyear conversion")
+
+if choice == "A":
+       print("Please enter a number of lightyears:")
+       usernum = int(input())
+       Parsecs = usernum/3.26156
+       print(Parsecs)
+
+  
+if choice == "B":
+    print("Please enter a number of parsecs:")
+    usernum2 = int(input())
+    Lightyears = usernum2 * 3.26156
+    print(Lightyears)
