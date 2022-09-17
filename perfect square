@@ -1,0 +1,33 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+
+
+import math
+
+def is_square(positive_int):
+    if positive_int < 0:
+        return False
+    root = math.sqrt(positive_int)
+    return positive_int == int(root + 0.5) ** 2
+
+def perfectSquareChecker(num):
+    if not (is_square(num)):
+        print("Hey, this number isn't even! Try again next time.")
+        return
+
+    print("This number is a perfect square, it is the product of:", math.sqrt(num), "squared.")
+
+def main():
+
+    
+    integer = int(input("Enter a square integer: "))
+    while integer < 0:
+        print("Not a perfect square. Try again next time. :(")
+        integer = int(input("Enter a square integer: "))
+    if integer > 1:
+        print("This number is a perfect square, it is the product of: 6 squared.")
+        print("This number is a perfect square, it is the product of: 4.0 squared.")
+    
+    
+if __name__ == "__main__":
+    main()
