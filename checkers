@@ -1,0 +1,74 @@
+# NAME: Justin Bret Chu
+# EMAIL: JUSTIN.CHU73@myhunter.cuny.edu
+#  Program #40: Checkers
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+import turtle
+
+# drawBoard(size) uses numpy and matplotlib to create a checkerboard and save it as an image
+def drawBoard(size):
+ : Create numpy size x size array of ones with 3 color channels called board"""
+   board = np.ones((size,size,3))
+   
+   # Fill in tiles of even indexed rows
+   for i in range(0, size, size//4):
+      for j in range(0, size, size//4):
+         board[i:i+size//8, j:j + size//8, :] = 0
+         
+   # Fill in tiles of odd indexed rows      
+   for i in range(size//8, size, size//4):
+      for j in range(size//8, size, size//4):
+         board[i:i+size//8, j:j + size//8, :] = 0
+         
+  
+   plt.imsave("board.png",board)
+
+   
+# setupScreen(size) creates a turtle screen of size + 100 x size + 100 with the background picture as the checkerboard created   
+def setupScreen(size):
+  
+
+   w = turtle.Screen()
+   w.setup(size + 100, size + 100)   
+   w.bgpic('board.png')
+
+
+# createPiece(color) creates a circle turtle with the specified color that will act as our checker piece
+def createPiece(pieceColor):
+ 
+
+   t = turtle.Turtle()
+   t.color(pieceColor)
+   t.shape("circle")
+   t.penup()
+   return t
+ 
+   
+
+
+
+# movePiece(piece, x, y) moves the piece to the respective tile on the board
+def movePiece(size, piece, row, col):
+   # calculating x coordinate and y coordinate based on board size, row, and col provided
+   coordX = size//-2 + size//16 + ((col - 1) * size//8)
+   coordY = size//2 - size//16 - ((row - 1) * size//8)
+   
+
+     
+def main():
+ 
+   """
+   size = int(input("Enter size of checkboard: "))
+   drawBoard(size)
+   setupScreen(size)
+   red = createPiece("red")
+   row = int(input("Enter row to move piece to: "))
+   col = int(input("Enter column to move piece to: "))
+   movePiece(size, red, row, col)
+   
+   
+   
+if __name__ == "__main__":
+   main()
