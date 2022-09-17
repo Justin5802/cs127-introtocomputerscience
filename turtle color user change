@@ -1,0 +1,18 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: October 4, 2021
+#This program creates: a turtle that stamps and turns four times based on user input
+
+import turtle
+turtle.colormode(255)
+james = turtle.Turtle()
+james.shape("turtle")
+
+usercolor = input("Please enter a 6-digit hexadecimal number: ")
+james.color(usercolor)
+james.right(90)
+
+for i in range(4):
+    james.forward(100)
+    james.stamp()
+    james.left(90)
