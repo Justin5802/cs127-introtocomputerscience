@@ -1,0 +1,17 @@
+#Name: Justin Bret Chu
+#Email: JUSTIN.CHU73@myhunter.cuny.edu
+#Date: October 26, 2021
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+Input = input("Enter name of input file: ")
+Output = input("Enter name of output file: ")
+
+homeless = pd.read_csv(Input)
+homeless["Fraction Single Adults"] = homeless["Total Single Adults in Shelter"]/homeless["Total Individuals in Shelter"]
+
+homeless.plot(x = "Date of Census", y = "Fraction Single Adults")
+
+fig = plt.gcf()
+fig.savefig(Output)
